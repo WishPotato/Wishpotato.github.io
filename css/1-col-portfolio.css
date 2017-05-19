@@ -5,7 +5,13 @@
  */
 
 body {
+    background-color: gainsboro;
     padding-top: 150px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+hr{
+    background: #000;
+    color: #000;
 }
 
 footer {
