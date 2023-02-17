@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    font-size: 28px;
+    background-color: #000;
+    background-image: linear-gradient(rgb(9, 9, 48), rgb(23, 23, 104));
+    color: white;
+}
+
+h1{
+    text-align: center;
+    font-family: 'COCOGOOSE', sans-serif;
+}
+
+h4{
+    margin: 0;
+    font-family: Calibri;
+}
+h5{
+    margin: 5px;
+    font-family: Calibri;
+}
+
+p{
+    text-align: center;
+    font-family: 'COCOGOOSE', sans-serif; 
+    font-size: 80%;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+
+  .button:hover{
+    background-color: #4CAF50;
+  }
+  
+  .button1 {background-color: #4CAF50;} /* Green */
+  .button2 {background-color: #008CBA;} /* Blue */
+
+  .btn-centered {
+    justify-content: center;
+    text-align: center;
+  }
+
+.offsetImage{
+    opacity: 0.5;
+}
+.offsetImage:hover{
+    opacity: 1;
+}
+
+  .grow{
+    padding: 1%;
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.1);
+  }
+
+  #horz-list ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+  }
+  
+  #horz-list ul li {
+    display: inline;
+  }
+  
+  #horz-list ul li a {
+    text-decoration: none;
+    padding: 0.2em 1.1em;
+    margin: 0 0 0 -6px;
+    color:white;
+  }
+  
+  #horz-list ul li:last-child a {
+    border: none;
+  }
+  
+  #horz-list ul li a:hover {
+    background: rgba(255, 255, 255, 0.8);
+    color: #1a1a1a;
+  }

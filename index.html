@@ -2,192 +2,86 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="The portfolio of a extremly passionated game programmer.">
-    <meta name="author" content="Jacob Friis Nielsen">
-
     <title>Jacob Friis Nielsen</title>
+    <link href="css/portfolio.css" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/cocogoose');
+    </style>
+    <script> 
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+        function changeImage(name)
+        {
+            document.getElementById("img").src = name;
+        }
+        function changeText(title, platform, description)
+        {
+            document.getElementById("title").innerText = title;
+            document.getElementById("platform").innerText = platform;
+            document.getElementById("description").innerText = description;
+        }
 
-    <!-- Custom CSS -->
-    <link href="css/1-col-portfolio.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+        function UpdateButtons(state1, state2, href1, href2 = "empty")
+        {
+            var firstElement = document.getElementById("trailer");
+            var secondElement = document.getElementById("play");
+            if(state1 === true) firstElement.style.display = "";
+            else firstElement.style.display = "none";
+            if(state2 === true) secondElement.style.display = "";
+            else secondElement.style.display = "none";
+            firstElement.href = href1;
+            secondElement.href = href2;
+        }
+        
+    </script>
 </head>
-
 <body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Portfolio</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="Contact.html">Contact</a>
-                    </li>
-                    <li>
-                        <a href="http://twitter.com/wishpotato" target="blank">Twitter</a>
-                    </li>
-                    <li>
-                        <a href="https://linkedin.com/in/jacob-nielsen-916a1071/" target="blank">LinkedIn</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <!-- Page Content -->
-    <div class="container">
-
-        <!-- Page Heading -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">Jacob Friis Nielsen
-                </h1>
-                <h1 class="page-header">
-                    <small>Game Programmer</small>
-                </h1>
-            </div>
-        </div>
-        <!-- /.row -->
-        
-        <div class="row">
-            <div class="col-md-7">
-                <a>
-                    <img src="Images/comet.jpg" alt="Screen Shot" style="width:650px;height:300px;">
-                </a>
-            </div>
-            <div class="col-md-5">
-                <h3>Comet Castle</h3>
-                <h4>An Mobile Endless Tower Defense Game</h4>
-                <a class="btn btn-primary" href="https://www.youtube.com/watch?v=fHL8epCkHl4" target="_blank">Watch Trailer</a>
-                <p>You as the lonesome castle on a comet are floating in space, but a goblin horde wants your gold, fight them off for as long as you can!</br> <i>Released 30th Septemper 2017</i> 
-                </br></br> Role in this project: Game Design & Programmer</p>
-                <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.Aloon.CometCastle" target="_blank">Google Play Store <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-        </div>
-        <!-- /.row -->
-        
-        <hr size="10px">
-        
-        <!-- Project Five -->
-        <div class="row">
-            <div class="col-md-7">
-                <a>
-                    <img src="Images/IntoTheLight.png" alt="Screen Shot" style="width:650px;height:300px;">
-                </a>
-            </div>
-            <div class="col-md-5">
-                <h3>Into the Light</h3>
-                <h4>An Occulus VR Exploration Puzzle Game</h4>
-                <a class="btn btn-primary" href="https://www.youtube.com/watch?v=oLBuUSQ8uOE" target="_blank">Watch Trailer</a>
-                <p>This Project was done over a periode of 4 months, for a semester on Medialogy, with a team of 14 man. <i>(No Official Release)</i>
-                    </br>Role in this project: Lead Programmer</br></br><i>Developed with Prawnkus, RikimaruTsuki, Odinforst, jannikVR, theiis, JesterJ, Xychosis, LegionV2, CandyFace, kasp0021, 
-                        TheMorten and NoaAka (Github Usernames).</i></br></br>*Warning*:<i>You may experience nausea from a longer playsession</i></p>
-                <a class="btn btn-primary" href="https://github.com/theiis/PGP2" target="_blank">View Project <span class="glyphicon glyphicon-chevron-right"></span></a> <a class="btn btn-primary" href="https://github.com/theiis/PGP2/archive/master.zip">Download Project <i>(880Mb)</i><span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-        </div>
-        <!-- /.row -->
-        
-        <hr size="10px">
-        
-                <!-- Project Five -->
-        <div class="row">
-            <div class="col-md-7">
-                <a>
-                    <img src="Images/Roedekuffert.jpg" alt="Roede Kuffert Image" style="width:650px;height:300px;">
-                </a>
-            </div>
-            <div class="col-md-5">
-                <h3>Den Roede Kuffert (The Red Suitcase)</h3>
-                <h4>A browser based endless runner</h4>
-                <a class="btn btn-primary" href="http://www.pixel.tv/den-roede-kuffert-spillet/" target="_blank">Play the Game</a>
-                <p>This game is inspirede by the game "Robot Unicorn Attack". Even though the game is in danish, it should still be playable for any one.</br> 
-                    The game is made for the danish game news website "Pixel.TV", for their community and fans.
-                    </br></br>Role in this project: Game Design & Programmer</p>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
-        
-        <hr>
-        
-        <!-- Pagination -->
-        <!--
-        <div class="row text-center">
-            <div class="col-lg-12">
-                <ul class="pagination">
-                    <li>
-                        <a href="#">&laquo;</a>
-                    </li>
-                    <li class="active">
-                        <a href="#">1</a>
-                    </li>
-                    <li>
-                        <a href="#">2</a>
-                    </li>
-                    <li>
-                        <a href="#">3</a>
-                    </li>
-                    <li>
-                        <a href="#">4</a>
-                    </li>
-                    <li>
-                        <a href="#">5</a>
-                    </li>
-                    <li>
-                        <a href="#">&raquo;</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        -->
-        <!-- /.row -->
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; wishpotato.github.io 2016</p>
-                </div>
-            </div>
-            <!-- /.row -->
-        </footer>
-
+    <h1>Jacob Friis Nielsen</h1>
+    <p>// Teacher & Developer of Games</p>
+    <div id="horz-list">
+        <ul>
+            <li>
+                <a>j.f.nielsen@hotmail.com</a>
+            </li>
+            <li>
+                <a href="https://linkedin.com/in/jacob-nielsen-916a1071/" target="_blank">LinkedIn</a>
+            </li>
+            <li>
+                <a href="https://twitter.com/wishpotato" target="_blank">Twitter</a>
+            </li>
+        </ul>
     </div>
-    <!-- /.container -->
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <h1>Portfolio</h1>
+    <div class="btn-centered">
+        
+        <button id="clickme" onclick="UpdateButtons(true, false, 'https://www.youtube.com/watch?v=fHL8epCkHl4'); changeImage('./images/cometcastle.png'); changeText('Comet Castle', 'Mobile - Android', 'A lonely castle in space, floating on a comet, is being attacked by goblins. Shoot them down!\nRole: Game Designer & Programmer');" class="button button2">Comet Castle</button>
+        <button id="clickme" onclick="UpdateButtons(false, true, 'empty','http://www.pixel.tv/den-roede-kuffert-spillet/'); changeImage('./images/rodekuffert.png'); changeText('Den Røde Kuffert (The Red Breifcase)', 'Web', 'Developed for Pixel.tv, who requested an game about their mascot, a red breifcase.\nRole: Game Designer & Programmer');" class="button button2">The Red Breifcase</button>
+        <button id="clickme" onclick="UpdateButtons(true, true, 'https://github.com/theiis/PGP2','https://www.youtube.com/watch?v=oLBuUSQ8uOE'); changeImage('./images/IntoTheLight.png'); changeText('Into the Light', 'PC - VR (Occulus)', 'A semester project. It is an VR puzzle exploration game, where you explore an old civilization.\nRole: Lead Programmer');" class="button button2">Into the Light</button>
+        <p></p>
+        
+        <image id="img" src="./images/cometcastle.png" width="320" height="320"/></image>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
+        <h4 id="title">TITLE</h4>
+        </br>
+        <h4 id="platform">PLATFORM</h4>
+        <h5 id="description">DESCRIPTION</h5>
+        </br>
+        <!-- BUTTONS-->
+        <a id="trailer" href="https://www.youtube.com/watch?v=fHL8epCkHl4" target="_blank" class="button button2">Watch Trailer</a>
+        <a id="play" href="https://www.youtube.com/watch?v=fHL8epCkHl4" target="_blank" class="button button2">Play</a>
+        
+        <p></p>
+    </div>
+    <script>
+        UpdateButtons(true, false, 'https://www.youtube.com/watch?v=fHL8epCkHl4');
+        changeImage('./images/cometcastle.png'); 
+        changeText('Comet Castle', 'Mobile - Android', 'A lonely castle in space, floating on a comet, is being attacked by goblins. Shoot them down!\nRole: Game Designer & Programmer');
+    </script>
 </body>
-
-</html>
+<footer>
+    
+</footer>
