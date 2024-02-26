@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jacob Friis Nielsen</title>
+    <link href="css/portfolio.css" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/cocogoose');
+    </style>
+    <script> 
+
+        function changeImage(name)
+        {
+            document.getElementById("img").src = name;
+        }
+        function changeText(title, platform, description)
+        {
+            document.getElementById("title").innerText = title;
+            document.getElementById("platform").innerText = platform;
+            document.getElementById("description").innerText = description;
+        }
+
+        function UpdateButtons(state1, state2, href1, href2 = "empty")
+        {
+            var firstElement = document.getElementById("trailer");
+            var secondElement = document.getElementById("play");
+            if(state1 === true) firstElement.style.display = "";
+            else firstElement.style.display = "none";
+            if(state2 === true) secondElement.style.display = "";
+            else secondElement.style.display = "none";
+            firstElement.href = href1;
+            secondElement.href = href2;
+        }
+        
+    </script>
+</head>
+<body>
+    <h1>Jacob Friis Nielsen</h1>
+    <p>// Teacher & Developer of Games</p>
+    <div id="horz-list">
+        <ul>
+            <li>
+                <a>J.F.Nielsen@hotmail.com</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/jacobfriisnielsen/" target="_blank">LinkedIn</a>
+            </li>
+        </ul>
+    </div>
+
+    <h1>Portfolio</h1>
+    <div class="btn-centered">
+        <button id="clickme" onclick="window.open('./index.html')" class="button button2">Game Design</button>
+        <button id="clickme" onclick="window.open('./graphiccatalog.html')" class="button button2">Graphic Design</button>
+    </div>
+    <p></p>
+    <div id="horz-list">
+        <ul>
+            <li>
+                <h5 id="description">Custom Made Trading Card Game Sleeves for a Team</h5>
+                <image id="portImg" src="./images/Team Milkshake Sleeve Design.png" /></image>
+            </li>
+            <p></p>
+            <li>
+                <h5 id="description">Custom Made Trading Card Game Token, for Flesh and Blood TCG</h5>
+                <image id="portImg" src="./images/Gold Token - Etsy - HF Multi.png" width="776" height="350"/></image>
+            </li>
+            <p></p>
+            <li>
+                <h5 id="description">Cardboardback of the custom tokens for Trading Card Games</h5>
+                <image id="portImg" src="./images/Cardboard Back.png" width="429" height="599"/></image>
+            </li>
+            <p></p>
+        </ul>
+    </div>
+</body>
+<footer>
+    
+</footer>
